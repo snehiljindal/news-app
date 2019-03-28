@@ -1,0 +1,89 @@
+body{
+    
+    margin:0;
+}
+header{
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top:px;
+    margin-bottom:0px;
+    height:20vh;
+    border-radius:8px;
+    box-shadow: 10px 10px 5px rgba(0,0,0, 0.75);
+    
+}
+.language{
+    width:7rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: black;
+    color:white;
+    font-style: bold
+}
+.language:hover{
+background-color:grey;
+color:red
+}
+#first{
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+    width: 22vw;
+    overflow-y: scroll;
+    position:fixed;
+    top: 0;
+}
+#inshorts{
+    font-size:2.5rem;
+    text-align:center;
+     margin-bottom:0;
+     width:100%;
+      margin-top: 3.5rem;
+      font-style: bold;
+}
+#close,#button{
+    position: fixed;
+}
+#close{
+    left:23vw;
+    top:9vh
+}
+#button{
+    left:5vw;
+    top:10vh;
+}
+li{
+    list-style-type: none;   
+}
+li button{
+    background-color: black;
+    color:white;
+    margin:1rem;
+    border:none;
+    font-size: 1.5rem;
+    
+}
+li button:hover{
+    background: grey;
+    width:12rem;
+    text-align: left;
+}
+#cards{
+    display:flex;
+    background-color: white;
+    margin:10px;
+    align-items: center;
+    box-shadow: 10px 10px 5px rgba(0,0,0, 0.6);
+    margin-bottom: 2rem;
+    
+}
+
+.card{
+    background-color: white;
+    margin:1rem;
+    flex:2
+    
+}

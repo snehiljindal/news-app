@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="second.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body ng-app="news">
+    <div  ng-controller="snehil">
+        <header >
+            <div id="first">
+                <p style="font-size: 3.6rem;text-align: center;color:red;font-style:bold,italic;margin:0">NEWS</p>
+               
+             
+                <button class="language">ENGLISH</button><span><button class="language">HINDI</button></span>
+                <hr>
+                <p style="font-size: 2rem;text-align: left;color:white;font-style:bold,italic;margin: 0">CATEGORY</p>
+               
+                <ol id="list">
+                <li ng-repeat='x in arrays'>
+                    <button ng-click="get(x)" id="x">{{x |uppercase}}</button>
+                </li>
+                </ol>
+            </div>
+            <i class="fas fa-times" id="close" style="display:none;font-size: 2rem;" ng-click="list()"><span>close</span></i>
+            <i class="fas fa-bars" ng-click="list1()" style="margin-left:10px;font-size:2rem" id="button"><span>MENU</span></i>
+            <p  id="inshorts">NEWS TODAY </p>
+            <!---<img src="1.jpg" height=200px width=200px style="text-align:center;margin-left:200px">-->
+        </header>
+        <main>
+    
+            <div id="second" style="margin-top:10rem;margin-left: 17rem;margin-right: 17rem">
+                <div>
+                    
+    
+                <li ng-repeat="values in value track by $index">
+                    <div  id="cards">
+                    <div ><img ng-src="{{values.multimedia[3].url}}"></div>
+                    <div class="card">{{values.title}}<br>
+                            {{values.byline}}<br>
+                        <p>{{values.abstract}} </p>
+                        <a style="color:black;cursor: pointer;" href="{{values.url}}" target="_blank" >READ MORE</a>
+                        
+                        </div>
+                     </div>   
+                </li>
+            </div>
+    </div>
+    </main>
+</body>
+</html>
